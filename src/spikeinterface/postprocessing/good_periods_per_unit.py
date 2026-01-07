@@ -18,7 +18,7 @@ else:
 class ComputeGoodPeriodsPerUnit(AnalyzerExtension):
     """Compute good time periods per unit based on quality metrics.
 
-    Paraneters
+    Parameters
     ----------
     method : {"false_positives_and_negatives", "user_defined", "combined"}
         Strategy for identifying good periods for each unit. If "false_positives_and_negatives", uses
