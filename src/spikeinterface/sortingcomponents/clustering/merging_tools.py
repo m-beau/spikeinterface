@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from multiprocessing import get_context
 from threadpoolctl import threadpool_limits
 from tqdm.auto import tqdm
@@ -20,7 +18,6 @@ try:
 except:
     pass
 from .tools import aggregate_sparse_features, FeaturesLoader
-
 
 DEBUG = False
 

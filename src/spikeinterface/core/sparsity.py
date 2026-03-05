@@ -1,15 +1,12 @@
 from __future__ import annotations
 
 import numpy as np
-import warnings
-
 
 from .basesorting import BaseSorting
 from .baserecording import BaseRecording
 from .sorting_tools import random_spikes_selection
 from .job_tools import _shared_job_kwargs_doc
 from .waveform_tools import estimate_templates_with_accumulator
-
 
 _sparsity_doc = """
     method : str
@@ -418,7 +415,7 @@ class ChannelSparsity:
             A Templates or a SortingAnalyzer object.
         threshold : float
             Threshold for "snr" method (in units of noise levels).
-        noise_levels : np.array | None, default: None
+        noise_levels : np.ndarray | None, default: None
             Noise levels required for the "snr" method. You can use the
             `get_noise_levels()` function to compute them.
             If the input is a `SortingAnalyzer`, the noise levels are automatically retrieved
@@ -753,7 +750,7 @@ def estimate_sparsity(
         Cut out in ms before spike time
     ms_after : float, default: 2.5
         Cut out in ms after spike time
-    noise_levels : np.array | None, default: None
+    noise_levels : np.ndarray | None, default: None
         Noise levels required for the "snr" and "energy" methods. You can use the
         `get_noise_levels()` function to compute them.
     {}
