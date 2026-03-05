@@ -138,9 +138,9 @@ class ValidUnitPeriodsWidget(BaseWidget):
             axs[0].set_xlabel("")
             axs[1].set_xlabel("")
             axs[2].set_xlabel("Time (s)")
-            axs[0].set_ylabel("FP Rate (RP violations)")
-            axs[1].set_ylabel("FN Rate (Amp. cutoff)")
-            axs[2].set_ylabel("Amplitude Scaling")
+            axs[0].set_ylabel("FP Rate\n(RP violations)")
+            axs[1].set_ylabel("FN Rate\n(Amp. cutoff)")
+            axs[2].set_ylabel("Amplitude\nScaling")
             axs[0].set_title(f"Unit {unit_id}")
 
             axs[1].sharex(axs[0])
